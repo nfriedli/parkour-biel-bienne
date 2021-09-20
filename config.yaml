@@ -1,0 +1,35 @@
+baseURL: https://parkour-biel-bienne.netlify.app/
+title: Parkour Biel-Bienne
+
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
+
+languages:
+  de:
+    contentDir: content/de
+    title: Parkour in Biel
+    languageName: Deutsch
+    weight: 1
+    params:
+      footer: Vive le sport...
+  
+  fr:
+    contentDir: content/fr
+    title: Parkour à Bienne
+    languageName: Français
+    weight: 2
+    params:
+      footer: Vive le sport...
+
+disableKinds:
+  - taxonomy
+  - term
+  - RSS
+  - sitemap
+  - robotsTXT
+  - 404
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
