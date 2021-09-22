@@ -11,7 +11,7 @@ languages:
     languageName: Deutsch
     weight: 1
     params:
-      footer: Vive le sport...
+      footer: Vive le mouvement!
   
   fr:
     contentDir: content/fr
@@ -19,7 +19,7 @@ languages:
     languageName: Français
     weight: 2
     params:
-      footer: Vive le sport...
+      footer: Vive le mouvement!
 
 disableKinds:
   - taxonomy
@@ -31,5 +31,9 @@ disableKinds:
 
 markup:
   goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
     renderer:
       unsafe: true
