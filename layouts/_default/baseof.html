@@ -36,7 +36,6 @@
     <main>
         <article>
             <header>
-                <h1>{{ .Title }}</h1>
                 {{ $current := .}}
                 {{ $lang := .Language}}
                 {{ if .Translations }}
@@ -45,8 +44,7 @@
                         <ul class="lang">
                             {{ range .AllTranslations }}
                             <li class="lang-item {{ if eq $lang .Language }} active{{end}}">
-                                <a href="{{ .Permalink }}" title="{{ .Title }}" hreflang="{{ .Language.Lang }}"
-                                    class="lang {{ if eq $lang .Language }} on{{end}}">
+                                <a href="{{ .Permalink }}" title="{{ .Title }}" hreflang="{{ .Language.Lang }}">
                                     <div class="lang-item-text">
                                         {{ .Language.LanguageName }}
                                     </div>
@@ -57,6 +55,7 @@
                     </nav>
                 </section>
                 {{ end }}
+                <h1>{{ .Title }}</h1>
             </header>
             <div class="content">
                 {{ block "main" . }}{{ end }}
