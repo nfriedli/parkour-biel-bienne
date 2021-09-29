@@ -332,3 +332,7 @@ VERSION:	0.0.1
   div + p {
     margin-top: 1rem;
   }
+
+  img.logo {
+    max-width: 66%;
+  }
