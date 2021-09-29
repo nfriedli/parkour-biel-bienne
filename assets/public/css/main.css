@@ -325,3 +325,10 @@ VERSION:	0.0.1
 
 .chapeau {
   font-weight: bold; }
+
+
+  /* Hacks pour inauguration */
+
+  div + p {
+    margin-top: 1rem;
+  }
