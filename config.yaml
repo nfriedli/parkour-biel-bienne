@@ -37,3 +37,11 @@ markup:
         title: true
     renderer:
       unsafe: true
+  
+minify:
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepEndTags: true
+      keepQuotes: true
+      keepWhitespace: true
